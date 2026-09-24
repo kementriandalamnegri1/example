@@ -1,0 +1,176 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* BACKGROUND */
+.background-overlay {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 12px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.header .logo {
+    width: 60px;
+    height: auto;
+}
+
+.header h1 {
+    font-size: clamp(0.75rem, 2.5vw, 1rem);
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+/* CONTENT BOX */
+.content-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.document-info,
+.signature-info,
+.additional-info {
+    margin-bottom: 20px;
+}
+
+/* TITLE */
+h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* TEXT */
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+strong {
+    color: #000;
+}
+
+.status {
+    color: green;
+    font-weight: 600;
+}
+
+/* ICON ROW */
+.additional-info p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* ICON */
+i {
+    font-size: 0.9rem;
+}
+
+/* ========================= */
+/* 📱 MOBILE (<480px) */
+/* ========================= */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .header h1 {
+        font-size: 0.82em;
+        margin-left: 0;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================= */
+/* 📱 TABLET (481px–768px) */
+/* ========================= */
+@media (max-width: 768px) {
+    .content-box {
+        max-width: 96%;
+        border-radius: 8px;
+    }
+
+    .background-overlay {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+
+    .header h1 {
+        font-size: 0.82em;
+        margin-left: 0;
+    }
+    
+    p {
+        font-size: 0.85em;
+        padding-bottom: 3px;
+    }
+
+    .header .logo {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
